@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+
+
+body {
+  background-color: #e9ecef
+}
+   /**
+   * Avoid browser level font resizing.
+   * 1. Windows Mobile
+   * 2. iOS / OSX
+   */
+   body,
+   table,
+   td,
+   a {
+     -ms-text-size-adjust: 100%; /* 1 */
+     -webkit-text-size-adjust: 100%; /* 2 */
+   }
+   p {
+    margin: 0;
+    padding: 0;
+   }
+   .container {
+    --max-width: 700px;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100%);
+    margin-inline: auto;
+   }
+
+   .wrapper {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .wrapper header {
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+   }
+   article {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   article header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: #fff;
+    font-family: Roboto, 'sans-serif';
+
+   }
+   article header h1 {
+    color: #fff;
+    font-size: 3rem!important;
+    font-family: Roboto, 'sans-serif';
+    margin: 0;
+   }
+   @media(max-width: 50em) {
+    article header h1 {
+      font-size: 1.5rem!important;
+    }
+    p.welcome-message {
+     font-size: 1rem!important;
+    }
+    p.warning-message {
+     font-size: 0.2rem !important;
+    }
+  }
+ 
+   p.welcome-message, p.warning-message {
+    font-family: Roboto;
+     text-align: center;
+     font-size: 2rem;
+     margin-top: 1rem;
+    color: #fff;
+    }
+    p.warning-message {
+      font-size: 1.2rem!important;
+      color: #ddd;
+      margin-bottom: 1rem;
+    }
+   .icon {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+   }
+   .icon img {
+    width: 200px;
+    height: 200px;
+   }
+
+/* Button of confirmation  */
+
+/* From uiverse.io */
+/* From uiverse.io by @adamgiebl */
+button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 40px 0px;
+  float: left;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #2ecc71;
+  border: none;
+  border-bottom: 5px solid #27ae60;
+  text-shadow: 0px -2px #27ae60;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+ }
+ 
+ button:hover, button:active {
+  -webkit-transform: translate(0px,5px);
+  -ms-transform: translate(0px,5px);
+  transform: translate(0px,5px);
+  border-bottom: 1px solid #2ecc71;
+ }
+
+ .goodbye-message {
+  font-family: Roboto, 'sans-serif';
+  padding-left: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+ }
+
+ .unsubscribe {
+  text-align: center;
+  padding: 10px;
+  color: #212121;
+  font-size: 12px;
+ }
